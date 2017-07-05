@@ -67,6 +67,18 @@
 			<result name="success">/TextTag.jsp</result>
 		</action>
 
+		<action name="formtag">
+			<result>/email.jsp</result>
+		</action>
+
+		<action name="groupui">
+			<result>/GroupUITag.jsp</result>
+		</action>
+
+		<action name="selectui">
+			<result>/SelectUITag.jsp</result>
+		</action>
+
 	</package>
 
 </struts>
