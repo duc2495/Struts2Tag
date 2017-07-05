@@ -79,6 +79,13 @@
 			<result>/SelectUITag.jsp</result>
 		</action>
 
+		<action name="ajaxTags">
+			<result>/ajaxTags.jsp</result>
+		</action>
+		<action name="ajaxTagsAction" class="com.tutorialspoint.struts2.AjaxTags">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/ajaxTags.jsp</result>
+		</action>
 	</package>
 
 </struts>
