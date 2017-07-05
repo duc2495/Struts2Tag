@@ -5,9 +5,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Hello World</title>
+<title>Data Tag Demo</title>
 </head>
 <body>
-   Hello World, I am _+_
+<h2>Current Date</h2>
+
+<h3>Day/Month/Year Format</h3>
+<s:date name="currentDate" format="dd/MM/yyyy" />
+
+<h3>Month/Day/Year Format</h3>
+<s:date name="currentDate" format="MM/dd/yyyy" />
+	
 </body>
 </html>

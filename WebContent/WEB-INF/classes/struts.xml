@@ -4,11 +4,17 @@
    "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
 	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
 	<package name="helloworld" extends="struts-default">
 
 		<action name="hello" class="com.tutorialspoint.struts2.HelloWorldAction"
 			method="execute">
 			<result name="success">/HelloWorld.jsp</result>
+		</action>
+
+		<action name="hello-ifelse" class="com.tutorialspoint.struts2.HelloWorldAction"
+			method="execute">
+			<result name="success">/HelloWorldIfElse.jsp</result>
 		</action>
 
 		<action name="employee-interator" class="com.tutorialspoint.struts2.Employee"
@@ -26,9 +32,39 @@
 			<result name="success">/employee-append.jsp</result>
 		</action>
 
-		<action name="hello-generator" class="com.tutorialspoint.struts2.HelloWorldAction"
+		<action name="hello-generator" class="com.tutorialspoint.struts2.HelloWorldAction2"
 			method="execute">
 			<result name="success">/HelloWorldGenerator.jsp</result>
+		</action>
+
+		<action name="employee-action" class="com.tutorialspoint.struts2.Employee"
+			method="execute">
+			<result name="success">/employee-action.jsp</result>
+		</action>
+
+		<action name="employee-include" class="com.tutorialspoint.struts2.Employee"
+			method="execute">
+			<result name="success">/employee-include.jsp</result>
+		</action>
+
+		<action name="datatag" class="com.tutorialspoint.struts2.DataTagAction"
+			method="execute">
+			<result name="success">/DataTag.jsp</result>
+		</action>
+
+		<action name="ajaxtag" class="com.tutorialspoint.struts2.HelloWorldAction"
+			method="execute">
+			<result name="success">/AjaxTag.jsp</result>
+		</action>
+
+		<action name="system" class="com.tutorialspoint.struts2.SystemDetails"
+			method="execute">
+			<result name="success">/System.jsp</result>
+		</action>
+
+		<action name="texttag" class="com.tutorialspoint.struts2.HelloWorldAction"
+			method="execute">
+			<result name="success">/TextTag.jsp</result>
 		</action>
 
 	</package>
